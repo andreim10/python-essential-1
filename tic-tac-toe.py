@@ -1,15 +1,15 @@
 #final project of python-essential-1
 def display_board(board):
    for row in range(3):
-   print("+-------+-------+-------+")
-   print("|       |       |       |")
-   print("|   {board[row][0]}   |   {board[row][1]}   |   {board[row][2]}   |")
-   print("|       |       |       |")
-   print("+-------+-------+-------+")
+    print("+-------+-------+-------+")
+    print("|       |       |       |")
+    print("|   {board[row][0]}   |   {board[row][1]}   |   {board[row][2]}   |")
+    print("|       |       |       |")
+    print("+-------+-------+-------+")
 
 
 def enter_move(board):
-    free_fields[]
+    free_fields=[]
     for r in range(3):
         for g in range(3):
             if board[r][c] not in ['O', 'X']:
@@ -33,7 +33,7 @@ def make_list_of_free_fields(board):
                 break
             else:
                 print("That square is already taken! Try another one.")
-        except ValueError:
+      except ValueError:
             print("Invalid input. Please enter an integer.")
 
 def victory_for(board, sign):
